@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "a4bca1f2-7b7e-4b70-9d5c-2b1e4f1b0001",
+    "name": "Proyecto 5 - Movies API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Arranque - API",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/"
+      }
+    },
+    {
+      "name": "GET - Todas las peliculas",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/movies"
+      }
+    },
+    {
+      "name": "GET - Pelicula por ID",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/movies/id/COLOCA_AQUI_UN_ID"
+      }
+    },
+    {
+      "name": "GET - Pelicula por titulo",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/movies/title/The%20Matrix"
+      }
+    },
+    {
+      "name": "GET - Peliculas por genero",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/movies/genre/Accion"
+      }
+    },
+    {
+      "name": "GET - Peliculas desde 2010",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/movies/year/2010"
+      }
+    },
+    {
+      "name": "POST - Crear pelicula",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Origen\",\n  \"director\": \"Christopher Nolan\",\n  \"year\": 2010,\n  \"genre\": \"Ciencia ficcion\"\n}"
+        },
+        "url": "http://localhost:3000/movies"
+      }
+    },
+    {
+      "name": "PUT - Modificar pelicula",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Origen\",\n  \"director\": \"Christopher Nolan\",\n  \"year\": 2010,\n  \"genre\": \"Ciencia ficcion\"\n}"
+        },
+        "url": "http://localhost:3000/movies/COLOCA_AQUI_UN_ID"
+      }
+    },
+    {
+      "name": "DELETE - Eliminar pelicula",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:3000/movies/COLOCA_AQUI_UN_ID"
+      }
+    },
+    {
+      "name": "GET - Todos los cines",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/cinemas"
+      }
+    },
+    {
+      "name": "GET - Cines de una pelicula",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/cinemas/movie/COLOCA_AQUI_UN_ID"
+      }
+    }
+  ]
+}

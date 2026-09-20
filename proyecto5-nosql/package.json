@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-5-nosql-movies",
+  "version": "1.0.0",
+  "description": "Proyecto 5 - API REST de peliculas con Express y MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node seeds/movies.seed.js",
+    "seed:cinemas": "node seeds/cinemas.seed.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.19.0"
+  }
+}
